@@ -9,7 +9,7 @@ const Verify = (props) => {
     useEffect(() =>{
         let id = props.match.params.id
 
-        fetch(`http://localhost:3000/verify/user/${id}`, {
+        fetch(`https://pollserver.herokuapp.com/verify/user/${id}`, {
             method: "PUT",
             mode: "cors",
         }).then(data =>{

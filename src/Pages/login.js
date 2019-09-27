@@ -31,7 +31,7 @@ const Login = (props) => {
   const sendData = evt => {
     evt.preventDefault();
     setIsLoading(true)
-    fetch(`http://localhost:3000/login?username=${params.username}&password=${params.password}`, {
+    fetch(`https://pollserver.herokuapp.com/login?username=${params.username}&password=${params.password}`, {
       method: "GET",
       mode: "cors",
     })

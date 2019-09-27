@@ -29,7 +29,7 @@ const Poll = (props) => {
   const sendPoll =(id, value) =>{
     const token = localStorage.getItem('auth-id')
     setIsLoading(true)
-    fetch(`http://localhost:3000/polls/${id}/${value}`, {
+    fetch(`https://pollserver.herokuapp.com/polls/${id}/${value}`, {
       method: "PUT",
       mode: "cors",
       headers:{
@@ -59,7 +59,7 @@ const Poll = (props) => {
     }
     const token = localStorage.getItem('auth-id')
     setIsLoading(true)
-    fetch(`http://localhost:3000/current/`, {
+    fetch(`https://pollserver.herokuapp.com/current/`, {
       method: "GET",
       mode: "cors",
       headers:{
@@ -87,7 +87,7 @@ const Poll = (props) => {
   const sendData = (id) => {
     const token = localStorage.getItem('auth-id')
     setIsLoading(true)
-    fetch(`http://localhost:3000/polls/${id}`, {
+    fetch(`https://pollserver.herokuapp.com/polls/${id}`, {
       method: "GET",
       mode: "cors",
       headers:{

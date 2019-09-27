@@ -74,7 +74,7 @@ const Index = (props) => {
     }
     const token = localStorage.getItem('auth-id')
     setIsLoading(true)
-    fetch(`http://localhost:3000/current/`, {
+    fetch(`https://pollserver.herokuapp.com/current`, {
       method: "GET",
       mode: "cors",
       headers:{
@@ -102,7 +102,7 @@ const Index = (props) => {
     evt.preventDefault()
     const token = localStorage.getItem('auth-id')
     setIsLoading(true)
-     fetch('http://localhost:3000/create', {
+     fetch('https://pollserver.herokuapp.com/create', {
        method: 'POST',
        mode: 'cors',
       headers:{

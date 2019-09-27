@@ -31,7 +31,7 @@ const Signup = (props) => {
   const signup = (evt) =>{
     evt.preventDefault()
     setIsLoading(true)
-     fetch('http://localhost:3000/user', {
+     fetch('https://pollserver.herokuapp.com/user', {
        method: 'POST',
        mode: 'cors',
       headers:{

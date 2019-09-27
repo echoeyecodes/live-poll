@@ -1,0 +1,58 @@
+.signup-root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.signup-hero{
+    width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #250933;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.signup-hero *{
+    text-align: left;
+    color: white;
+}
+.signup-hero h1{
+    text-align: center;
+}
+.signup-hero a{
+    text-align: center;
+    margin: 10px;
+}
+.signup-hero p{
+    margin: 5px;
+}
+.signup-hero input{
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 0px 0px 10px 0px;
+}
+
+.signup-hero button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #25d366;
+    border: none;
+    width: 120px;
+    text-align: center;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.signup-hero{
+        width: 90%;
+    }
+}

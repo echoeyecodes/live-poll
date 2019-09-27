@@ -1,0 +1,10 @@
+#sham-button{
+    padding: 10px;
+    border: none;
+    background-color: #25d366;
+    opacity: 0.4;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    width: 150px;
+}

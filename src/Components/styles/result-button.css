@@ -1,0 +1,26 @@
+.result-button{
+    background-color: transparent;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px white solid;
+    color: white;
+    position: relative;
+    width: 60%;
+    height: 40px;
+}
+.result-button div{
+    z-index: 1;
+    background-color: #ff0084;
+    left: 0px;
+    border-radius: 5px;
+    width: 80%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-button div p{
+margin: 0px;
+}

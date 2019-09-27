@@ -1,0 +1,40 @@
+.index-root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.hero{
+    width: 500px;
+    background-color: #250933;
+    padding: 20px;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.hero h1{
+    color: white;
+    font-size: 24px;
+}
+#set-title{
+ border: none;
+ padding: 5px;
+ width: 80%;
+ border-radius: 5px;
+ text-align: center;
+ height: 150px;
+ margin: 10px;   
+}
+
+
+@media only screen and (max-width: 600px) {
+	.hero{
+        width: 90%;
+    }
+}

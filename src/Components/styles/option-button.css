@@ -1,0 +1,10 @@
+.option-button{
+    background-color: #e4405f;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 60%;
+    cursor: pointer;
+}

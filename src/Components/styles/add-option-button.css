@@ -1,0 +1,10 @@
+#add-option-button{
+    padding: 10px;
+    border: none;
+    background-color: #e4405f;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    width: 150px;
+    cursor: pointer;
+}

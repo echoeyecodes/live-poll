@@ -1,0 +1,47 @@
+.alert-modal-root{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:10px;
+    z-index: 1;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+.alert-modal-common{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.alert-modal-root *{
+    color: black !important
+}
+.alert-modal-root div{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 40px;
+    border-radius: 5px;
+}
+.alert-modal-root div p{
+    max-width: 300px;
+    margin:5px;
+    text-align: center;
+    line-height: 1.3em
+}
+.alert-modal-root div h2{
+    margin:5px;
+}
+.alert-modal-root div button{
+    color: white !important;
+    border: none !important;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 150px;
+    cursor: pointer;
+}

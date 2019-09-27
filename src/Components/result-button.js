@@ -26,7 +26,7 @@ const ResultButton = (props) =>{
             margin: "10px auto 0px auto",
           }}
         >
-        <p style={{position: 'absolute', left: '85px', top: '5px', color: 'white'}}>{realRate}%</p>
+        <p style={{position: 'absolute', left: '85px', top: '5px', color: 'white'}}>{realRate.toFixed(2)}%</p>
           <div
             style={{
               width: `${realRate}%`,

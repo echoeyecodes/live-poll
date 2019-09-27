@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./styles/login.css";
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router-dom";
@@ -19,12 +19,6 @@ const Login = (props) => {
     params[evt.target.name] = evt.target.value;
     setParams(params);
   };
-
-  useEffect(() => {
-    return () =>{
-      document.body.style.overflow = 'hidden'
-    }
-  }, [isLoading, showModal, showModalFail])
   const handleShowModal = () =>{
     setShowModal(false)
     props.history.push('/')

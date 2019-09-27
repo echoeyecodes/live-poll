@@ -1,13 +1,20 @@
 import React from 'react'
 import Spinner from 'react-bootstrap/Spinner'
-import './styles/progress-bar.css'
-const ProgressBar = () =>{
+import Modal from 'react-bootstrap/Modal'
+const ProgressBar = (props) =>{
     return(
-        <div className='progress-modal-root'>
-            <Spinner style={{color: 'white'}} animation="border" role="status">
-  <span className="sr-only">Loading...</span>
+        <Modal
+        show
+        size="sm"
+        aria-labelledby="example-modal-sizes-title-sm"
+        centered
+      >
+        <Modal.Body>
+        <Spinner style={{color: 'black'}} animation="border" role="status">
+  <p  style={{color: 'black'}} className="sr-only">Loading...</p>
 </Spinner>
-        </div>
+        </Modal.Body>
+      </Modal>
     )
 }
 

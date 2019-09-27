@@ -54,11 +54,6 @@ const Poll = (props) => {
     })
   }
 
-  useEffect(() => {
-    return () =>{
-      document.body.style.overflow = 'hidden'
-    }
-  }, [isLoading, showModalFail])
   useEffect(() =>{
     if(!localStorage.getItem('auth-id')){
       props.history.push('/login')

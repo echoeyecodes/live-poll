@@ -67,12 +67,6 @@ const Index = (props) => {
       setValid(true);
     }
   };
-
-  useEffect(() => {
-    return () =>{
-      document.body.style.overflow = 'hidden'
-    }
-  }, [isLoading, showModal, showModalFail])
   
   useEffect(() =>{
     if(!localStorage.getItem('auth-id')){

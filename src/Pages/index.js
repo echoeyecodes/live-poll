@@ -68,6 +68,12 @@ const Index = (props) => {
     }
   };
 
+  useEffect(() => {
+    return () =>{
+      document.body.style.overflow = 'hidden'
+    }
+  }, [isLoading, showModal, showModalFail])
+  
   useEffect(() =>{
     if(!localStorage.getItem('auth-id')){
       props.history.push('/login')

@@ -16,6 +16,11 @@ const Signup = (props) => {
   const [isLoading, setIsLoading] = useState(false)
   const [errorMsg, setErrorMsg] = useState('')
 
+  useEffect(() => {
+    return () =>{
+      document.body.style.overflow = 'hidden'
+    }
+  }, [isLoading, showModal, showModalFail])
   const setParameters = (evt) =>{
     body[evt.target.name] = evt.target.value
     setBody(body)
